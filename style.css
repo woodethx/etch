@@ -1,27 +1,30 @@
+:root{
+    --sides: 16;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
 #container{
-    height: 525px;
-    width: 525px;
+    width: 30vw;
+    aspect-ratio: 1/1;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     border-style: solid;
     border-color: black;
-    gap: 1px;
 }
 #container > div{
-    border-style: solid;
-    border-color: black;
-    width: 25px;
-    height: 25px;
+    flex: 0 0 calc(100% / var(--sides));
+    aspect-ratio: 1/1;
 }
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 10px;
-}
+  }
 
 .selected{
     border-style: solid;
