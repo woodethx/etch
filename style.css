@@ -1,0 +1,22 @@
+#container{
+    height: 525px;
+    width: 525px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-color: black;
+    gap: 1px;
+}
+#container > div{
+    border-style: solid;
+    border-color: black;
+    width: 25px;
+    height: 25px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
